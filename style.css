@@ -1,0 +1,148 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f8ff;
+    color: #003366;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero p {
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-buttons a {
+    background-color: #ffcc00;
+    color: #003366;
+    padding: 12px 25px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-buttons a:hover {
+    background-color: #ffd633;
+    transform: scale(1.05);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-dark {
+    background-color: #e0f7fa;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* 📱 Responsive Layout */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-buttons a {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .projects,
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card,
+    .team-member {
+        width: 90% !important;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+.join-btn {
+    background-color: #0077b6;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.join-btn:hover {
+    background-color: #005f99;
+    transform: scale(1.05);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+}

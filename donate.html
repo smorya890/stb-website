@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate - Save The Bay</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .donate-section {
+            padding: 60px 20px;
+            background-color: #e6f2ff;
+            text-align: center;
+        }
+
+        .donate-section h2 {
+            font-size: 32px;
+            color: #004080;
+            margin-bottom: 20px;
+        }
+
+        .donate-form {
+            max-width: 500px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .donate-form input,
+        .donate-form select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .donate-form button {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        .donate-form button:hover {
+            background-color: #005f99;
+        }
+
+        .back-home {
+            margin-top: 30px;
+        }
+
+        .back-home a {
+            text-decoration: none;
+            color: #0077b6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div><strong>Save The Bay</strong></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Our Work</a>
+            <a href="donate.html">Donate</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="donate-section">
+        <h2>Your Support Can Make a Difference 🌊</h2>
+        <form class="donate-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <select required>
+                <option value="">Select Amount</option>
+                <option value="10">$10</option>
+                <option value="25">$25</option>
+                <option value="50">$50</option>
+                <option value="100">$100</option>
+            </select>
+            <button type="submit">Donate Now</button>
+        </form>
+
+        <div class="back-home">
+            <p><a href="index.html">← Back to Home</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Save The Bay | info@savethebay.org</p>
+    </footer>
+
+</body>
+
+</html>
